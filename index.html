@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html ng-app lang="en">
-  <head>
-		<meta charset=utf-8>
-		<title>Department of Unintended Development</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<script src="http://snapsvg.io/assets/js/snap.svg-min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-		<script src="./js/script.js"></script>
-	  <link rel="stylesheet" href="./css/style.css"/>
-  </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </div>
-    <svg id="svg" width="640" height="480"></svg>
-		<svg id="curve" width="640" height="480">
-			<path d="M100,200 C100,100 250,100 250,200" fill="none" stroke="#000" strokeWidth="5">
-				<animate attributeName="d" 
-					calcMode="spline" 
-					values="M100,200 C100,100 50,100 0,200;
-							M100,200 C100,100 150,100 50,190; 
-							M100,200 C100,100 350,100 150,180;
-							M100,200 C100,100 450,100 250,200;
-							M200,190 C100,100 550,100 250,200;
-							M300,180 C100,100 650,100 250,200;
-							M400,200 C100,100 750,100 250,200"
-					keytimes="
-							0.0;
-							0.2;
-							0.4;
-							0.5;
-							0.6;
-							0.7;
-							1.0"
-					keysplines="
-							0.3,0.8,0.9,0.03;
-							0.4,0.9,0.7,1.0;
-							0.5,0.9,0.8,1.0;
-							0.5,0.9,0.8,1.0;
-							0.5,0.9,0.8,1.0;
-							0.5,0.9,0.8,1.0"
-					begin="0s" 
-					dur="3s" 
-					repeatDur="indefinite"/>
-			</path>
-		</svg>
-  </body>
+ <head>
+  <meta charset=utf-8>
+  <title>Department of Unintended Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="http://snapsvg.io/assets/js/snap.svg-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css"/>
+ </head>
+ <body>
+  <div>
+   <label>Name:</label>
+   <input type="text" ng-model="yourName" placeholder="Enter a name here"/>
+   <hr>
+   <h1>Hello {{yourName}}!</h1>
+  </div>
+  <svg id="svg" width="640" height="480"/>
+  <svg id="curve" width="640" height="480">
+   <path d="M100,200 C100,100 250,100 250,200" fill="none" stroke="#000" strokeWidth="5">
+    <animate 
+	 attributeName="d" 
+     calcMode="spline" 
+     values="M100,200 C100,100 50,100 0,200;
+		M100,200 C100,100 150,100 50,190; 
+		M100,200 C100,100 350,100 150,180;
+		M100,200 C100,100 450,100 250,200;
+		M200,190 C100,100 550,100 250,200;
+		M300,180 C100,100 650,100 250,200;
+		M400,200 C100,100 750,100 250,200"
+	 keytimes="
+		0.0;
+		0.2;
+		0.4;
+		0.5;
+		0.6;
+		0.7;
+		1.0"
+	 keysplines="
+		0.3,0.8,0.9,0.03;
+		0.4,0.9,0.7,1.0;
+		0.5,0.9,0.8,1.0;
+		0.5,0.9,0.8,1.0;
+		0.5,0.9,0.8,1.0;
+		0.5,0.9,0.8,1.0"
+     begin="0s" 
+     dur="3s" 
+	 repeatDur="indefinite"/>
+   </path>
+  </svg>
+ </body>
 </html>
